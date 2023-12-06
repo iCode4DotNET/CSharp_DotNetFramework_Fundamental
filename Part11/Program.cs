@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Part11.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,62 @@ namespace Part11
     {
         static void Main(string[] args)
         {
+            // Value Type : stack
+            int a = 10;
+            int b = a;
+
+            a++;
+
+            Console.WriteLine($"a = {a} b = {b}");
+
+            // Reference Type : heap
+
+            string s1 = "Soroush Sadr";
+            string s2 = s1;
+
+            s1 = "Session 11";
+
+            Console.WriteLine($"s1 = {s1} s2 = {s2}");
+
+            int[] numbers1 = new int[3];
+            numbers1[0] = 10;
+            numbers1[1] = 20;
+            numbers1[2] = 30;
+
+            // 
+            int[] numbers2 = numbers1;
+
+            foreach (var item in numbers2)
+            {
+                Console.WriteLine(item);
+            }
+
+            numbers1[1] = 2000;
+            Console.ForegroundColor = ConsoleColor.Green;
+
+            foreach (var item in numbers2)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.Clear();
+
+            int[] myArray = new int[3];
+            myArray[0] = 10;
+            myArray[1] = 20;
+            myArray[2] = 30;
+
+
+            // int[] result = MyClass.ChangeArray(myArray);
+
+            MyClass.ChangeArray(myArray);
+
+            foreach (var item in myArray)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.ReadKey();
         }
     }
 }
