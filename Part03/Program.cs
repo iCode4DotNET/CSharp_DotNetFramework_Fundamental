@@ -10,6 +10,7 @@ namespace Part03
     {
         static void Main(string[] args)
         {
+
             Console.Write("Plz Enter Your Name : ");
             string name = Console.ReadLine();
 
@@ -18,11 +19,25 @@ namespace Part03
 
             Console.Write("Plz Enter Your Age : ");
 
-            //  int age = int.Parse(Console.ReadLine());
 
-            //  int age2 = Convert.ToInt32(Console.ReadLine());
+            // Parse is a Method
+            // Convert is a Class
 
-            byte age = byte.Parse(Console.ReadLine());
+            // Parse ( string to .....)
+            // Convert.Method (.... to .... )
+
+
+
+            int age = int.Parse(Console.ReadLine());
+
+            //int age2 = Convert.ToSingle()
+
+            byte age3 = byte.Parse(Console.ReadLine());
+
+            long mylong = 123456;
+
+            string tmp = Console.ReadLine();
+            int age4 = int.Parse(tmp);
 
             float ff = float.Parse(Console.ReadLine());
 

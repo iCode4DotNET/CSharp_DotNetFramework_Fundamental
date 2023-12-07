@@ -14,27 +14,62 @@ namespace Part02
         /// </summary>
         public enum RoozHayeHafte
         {
-            Shanbe, YekShanbe, DoShanbe, SeShanbe, ChaharShanbe, PanjShanbe, Jome
+            Shanbe, 
+            YekShanbe,
+            DoShanbe, 
+            SeShanbe, 
+            ChaharShanbe, 
+            PanjShanbe, 
+            Jome
+        };
+
+
+        public enum RoozHayeHafte2 : byte
+        {
+            شنبه,
+            یکشنبه ,
+            دوشنبه = 200,
+            سه_شنبه,
+            چهارشنبه,
+            پنج_شنبه,
+            جمعه
         };
 
 
         /// <summary>
         /// انواع مدارک تحصیلی
         /// </summary>
-        public enum EducationType
+        public enum EducationType 
         {
-            Diplom, FogheDiplom, Lisans = 1000, FogheLisans, PhD
+            Diplom, 
+            FogheDiplom, 
+            Lisans = 1000, 
+            FogheLisans, 
+            PhD = 1003
         }
+
+
 
         static void Main(string[] args)
         {
+
+            // Simple   : int , char , float , double , string , ....
+            // Complex  : DateTime 
+
+            // DataType varibleName = value ; 
+            // DataType varibleName = new DataType() ;
+
+
             int age = 10;
 
-            RoozHayeHafte emrooz = RoozHayeHafte.YekShanbe;
+            RoozHayeHafte emrooz = RoozHayeHafte.ChaharShanbe;
 
             EducationType madrak = EducationType.FogheLisans;
 
             int fogheLisansNumber = (int)EducationType.FogheLisans;
+
+
+            RoozHayeHafte2 rooz = RoozHayeHafte2.پنج_شنبه;
 
 
             DateTime alan = new DateTime();

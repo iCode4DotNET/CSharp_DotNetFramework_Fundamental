@@ -18,33 +18,65 @@ namespace Part04
             #region [ Part 01 ]
 
             Console.Write("Plz Enter Your Age : ");
-            int age = 1234;
             //int.TryParse(Console.ReadLine(), out age);
             //Console.WriteLine($"Age = {age}");
 
+            int age = 1234;
             bool isConvertedCorrectly = int.TryParse(Console.ReadLine(), out age);
 
-            //if (isConvertedCorrectly)
-            //{
-            //    Console.ForegroundColor = ConsoleColor.Green;
-            //    Console.WriteLine($"Age = {age}");
-            //}
-            //else
-            //{
-            //    Console.ForegroundColor = ConsoleColor.Red;
-            //    Console.WriteLine($"Age = {age}");
-            //}
+            bool isConvertedCorrectly2 = int.TryParse(Console.ReadLine(), out int age2);
 
 
-            //if (isConvertedCorrectly)
-            //    Console.ForegroundColor = ConsoleColor.Green;
-            //else
-            //    Console.ForegroundColor = ConsoleColor.Red;
+            if (isConvertedCorrectly == true)
+            {
+
+            }
+
+            if (isConvertedCorrectly)
+            {
+
+            }
+
+            if (isConvertedCorrectly2 == false)
+            {
+
+            }
+
+            if (!isConvertedCorrectly)
+            {
+
+            }
 
 
-            //   Console.ForegroundColor = isConvertedCorrectly ? ConsoleColor.Green : ConsoleColor.Red;
+
+            if (isConvertedCorrectly)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($"Age = {age}");
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"Age = {age}");
+            }
+
+
+            if (isConvertedCorrectly)
+                Console.ForegroundColor = ConsoleColor.Green;
+            else
+                Console.ForegroundColor = ConsoleColor.Red;
+
+
+            int alaki = 123;
+
+
+            Console.ForegroundColor = isConvertedCorrectly ? ConsoleColor.Green : ConsoleColor.Red;
 
             Console.ForegroundColor = !isConvertedCorrectly ? ConsoleColor.Red : ConsoleColor.Green;
+
+
+            int c = isConvertedCorrectly ? 100 : alaki > 100 ? 1000 : 2000;
+
 
             Console.WriteLine($"Age = {age}");
 

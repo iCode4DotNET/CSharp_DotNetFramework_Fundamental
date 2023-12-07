@@ -85,3 +85,27 @@ namespace Part08
         }
     }
 }
+
+
+//  MODE GAME  : 1 SIMPLE 2 NORMAL 3 HARD
+
+// SIMPLE : (0-100) بدون محدودیت در تعداد بتونه حدس بزنه
+// NORMAL : MAX 20 ( RANGE : 0- 200 )
+// HARD   : MAX 10  ( NO RANGE )
+
+
+// IF MAX/2 PASSED => HELP ? YES :
+// ( تعداد رقم - زوج فرد - نصف ارقام نمایش داده شود - کل ارقام به شکل بهم ریخته نمایش داده شود )
+// CHANCES - 2  
+
+
+// IF JUST ONE CHANCE LEFT : SEE ADS ? YES  :  1MIN ADS 
+
+// CHANCES + 2
+
+
+// END ==> RE PLAY ?  RESET , ...... 
+
+// SHOW STATISTICS
+
+// PLAY MUSIC ( OPTIONAL ) 

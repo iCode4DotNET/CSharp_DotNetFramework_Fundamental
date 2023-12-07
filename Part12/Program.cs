@@ -44,6 +44,11 @@ namespace Part12
 
             MyClass.ShowNumbers(100, 200, 300);
 
+            MyClass.ShowNumbers(100, 200);
+
+            MyClass.ShowNumbers(100, 200, 300,54,54,54,543,5,435,43,5,435,435,55);
+
+
             //----------------------------------------
 
             int res;

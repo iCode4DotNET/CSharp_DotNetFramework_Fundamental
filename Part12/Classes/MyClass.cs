@@ -7,17 +7,25 @@ namespace Part12.Classes
 {
    public class MyClass
     {
+        /// <summary>
+        /// Call by Value فراخوانی با مقدار
+        /// </summary>
         public static void DoSomething(int input)
         {
             input += 1000;
             Console.WriteLine($"inside method value = {input}");
         }
 
+        /// <summary>
+        /// Call by Reference فراخوانی با آدرس - رفرنس
+        /// </summary>
         public static void DoSomething(ref int input)
         {
             input += 2000;
             Console.WriteLine($"inside method value = {input}");
         }
+
+
 
         public static void DoSomething2(out int input)
         {
@@ -50,5 +58,14 @@ namespace Part12.Classes
                 Console.WriteLine($"the input values = {item}");
             }
         }
+
+
+        //A params parameter must be the last parameter in a parameter list
+        //public static void ShowNumbers2(params int[] input , int alaki) { }
+
+        //public static void ShowNumbers2(params int[] input , string alaki) { }
+
+        public static void ShowNumbers2(string alaki,params int[] input ) { }
+
     }
 }

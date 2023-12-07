@@ -29,7 +29,7 @@ namespace Part07
             Console.WriteLine(rand2.Next());
             Console.WriteLine(rand2.Next());
 
-            System.Threading.Thread.Sleep(100);
+            //System.Threading.Thread.Sleep(100);
 
             Console.WriteLine(rand2.Next());
             Console.WriteLine(rand2.Next());

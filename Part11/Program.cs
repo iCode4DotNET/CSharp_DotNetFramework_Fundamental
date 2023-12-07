@@ -11,7 +11,7 @@ namespace Part11
     {
         static void Main(string[] args)
         {
-            // Value Type : stack
+            // Value Type : stack , struct , non nullable
             int a = 10;
             int b = a;
 
@@ -19,14 +19,21 @@ namespace Part11
 
             Console.WriteLine($"a = {a} b = {b}");
 
-            // Reference Type : heap
+            // Reference Type : heap , class , nullable
 
             string s1 = "Soroush Sadr";
             string s2 = s1;
 
             s1 = "Session 11";
 
+            // string immutable
+
+            //StringBuilder sb = new StringBuilder();
+
             Console.WriteLine($"s1 = {s1} s2 = {s2}");
+
+
+            Console.ReadKey();
 
             int[] numbers1 = new int[3];
             numbers1[0] = 10;
@@ -48,6 +55,7 @@ namespace Part11
             {
                 Console.WriteLine(item);
             }
+            Console.ReadKey();
 
             Console.Clear();
 
@@ -55,6 +63,8 @@ namespace Part11
             myArray[0] = 10;
             myArray[1] = 20;
             myArray[2] = 30;
+
+
 
 
             // int[] result = MyClass.ChangeArray(myArray);

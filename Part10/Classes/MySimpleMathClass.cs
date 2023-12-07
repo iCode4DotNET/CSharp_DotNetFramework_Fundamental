@@ -8,14 +8,14 @@ namespace Part10.Classes
     /// <summary>
     /// کلاسی برای عملیات پایه ریاضی
     /// </summary>
-    class MySimpleMathClass
+    static class MySimpleMathClass
     {
         /// <summary>
         /// متدی برای جمع 2 عدد
         /// </summary>
         /// <param name="number1">عدد اول</param>
         /// <param name="number2">عدد دوم</param>
-        /// <returns></returns>
+        /// <returns>مجموع</returns>
        public static int DoSum(int number1, int number2)
         {
             // int sum = number1 + number2;
@@ -25,6 +25,7 @@ namespace Part10.Classes
         }
 
         //---------- Overloading
+        // Method Signature ورودی ها
 
         /// <summary>
         /// متدی برای جمع 2 عدد
@@ -47,6 +48,17 @@ namespace Part10.Classes
         public static float DoSum(int number1, float number2)
         {
             return number1 + number2;
+        }
+
+
+        public static float DoDivide(int number1, int number2)
+        {
+            return ((float)number1 / number2);
+        }
+
+        public static float DoDivide(float number1, float number2)
+        {
+            return (number1 / number2);
         }
     }
 }

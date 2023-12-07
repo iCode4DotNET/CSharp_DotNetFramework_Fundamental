@@ -46,19 +46,17 @@ namespace Part15
             }
 
 
-            //  var result = names.FindAll(n => n.ToUpper().StartsWith("A"));
+            var result = names.FindAll(n => n.ToUpper().StartsWith("A"));
 
-            // var result = names.FindAll(n => n.ToUpper().EndsWith("A"));
+            var result2 = names.FindAll(n => n.ToUpper().EndsWith("A"));
 
-            //  var result = names.FindAll(n => n.Length > 3);
+            var result3 = names.FindAll(n => n.Length > 3);
 
-            // var result = names.FindAll(n => n.Length > 3 && n.ToLower().Contains("e"));
+            var result4 = names.FindAll(n => n.Length > 3 && n.ToLower().Contains("e"));
 
-            //  var result = names.FindAll(n => n.Length > 3 || n.ToLower().Contains("e"));
+            var result5 = names.FindAll(n => n.Length > 3 || n.ToLower().Contains("e"));
 
-            var result = names.FindAll(n => n.Contains(" "));
-
-
+            var result6 = names.FindAll(n => n.Contains(" "));
 
             foreach (var item in result)
             {
@@ -70,7 +68,7 @@ namespace Part15
             char[] arrayResult = name.ToCharArray();
             foreach (char item in arrayResult)
             {
-                // Console.WriteLine(item);
+                Console.WriteLine(item);
             }
 
 

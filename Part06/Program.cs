@@ -12,7 +12,7 @@ namespace Part06
         {
             #region [ for - ASCII Code ]
 
-            for (int i = 48; i <= 57; i++)
+            for (int i = 1; i <= 57; i++)
             {
                 Console.WriteLine($"Code = {i}\tChar = {(char)i}");
             }
@@ -24,7 +24,7 @@ namespace Part06
 
             #endregion
 
-            Console.Clear();
+            //Console.Clear();
 
             #region [ While - DoWhile ]
             int j = 0;
@@ -46,10 +46,16 @@ namespace Part06
             } while (k <= 10);
             #endregion
 
-            Console.Clear();
+            //Console.Clear();
 
-            #region [ Array ]
+            #region [ Classic Array ]
             // Array آرایه ها 
+
+            // Fixed Size
+            // Reference Type
+            // 0 based index
+            
+
 
             int[] numbers = new int[3];
 
@@ -58,9 +64,18 @@ namespace Part06
             numbers[2] = 300;
 
 
+            Console.WriteLine(numbers);
+
+
             for (int i = 0; i < numbers.Length; i++)
             {
-                Console.WriteLine(numbers[i]);
+                // محتوای خونه آی ام 
+                //Console.WriteLine(numbers[i]);
+
+                Console.WriteLine($"{i+1} : {numbers[i]}"); // OK
+
+                //Console.WriteLine($"{i++} : {numbers[i]}"); // ERROR
+
             }
 
             Console.ForegroundColor = ConsoleColor.Green;
