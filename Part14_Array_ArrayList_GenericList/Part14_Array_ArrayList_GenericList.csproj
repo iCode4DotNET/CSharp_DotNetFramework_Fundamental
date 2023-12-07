@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{F9759331-CC8C-41CD-8F47-90A20941FC68}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Part14</RootNamespace>
-    <AssemblyName>Part14</AssemblyName>
+    <RootNamespace>Part14_Array_ArrayList_GenericList</RootNamespace>
+    <AssemblyName>Part14_Array_ArrayList_GenericList</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

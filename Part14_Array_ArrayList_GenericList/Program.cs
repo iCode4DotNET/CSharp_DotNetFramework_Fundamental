@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Part14
+namespace Part14_Array_ArrayList_GenericList
 {
     internal class Program
     {
@@ -119,7 +116,7 @@ namespace Part14
 
             foreach (var item in numbers)
             {
-                Console.WriteLine(value : item);
+                Console.WriteLine(value: item);
             }
 
 

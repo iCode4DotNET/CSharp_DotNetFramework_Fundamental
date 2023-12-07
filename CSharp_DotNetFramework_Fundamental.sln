@@ -29,7 +29,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part12", "Part12\Part12.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part13", "Part13\Part13.csproj", "{7D92B2E2-2EE9-418F-9FAB-342D20B0FE6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part14", "Part14\Part14.csproj", "{F9759331-CC8C-41CD-8F47-90A20941FC68}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part14_Array_ArrayList_GenericList", "Part14_Array_ArrayList_GenericList\Part14_Array_ArrayList_GenericList.csproj", "{F9759331-CC8C-41CD-8F47-90A20941FC68}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part15", "Part15\Part15.csproj", "{E949DF4E-5BCF-4289-9D0F-D8F34DB2609A}"
 EndProject
