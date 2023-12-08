@@ -26,6 +26,8 @@ namespace Part12.Classes
         }
 
 
+        // مثال خود سی شارپ
+        // TryParse
 
         public static void DoSomething2(out int input)
         {
@@ -51,8 +53,14 @@ namespace Part12.Classes
         }
 
 
+        // مثال خود سی شارپ params
+        
+         
         public static void ShowNumbers(params int[] input)
         {
+
+            string[] parts = "".Split('-', '=', ',');
+
             foreach (var item in input)
             {
                 Console.WriteLine($"the input values = {item}");
