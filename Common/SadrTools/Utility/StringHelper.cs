@@ -34,18 +34,18 @@ namespace SadrTools.Utility
         {
             // soroUSH ==> Soroush
 
-            if(IsNullOrEmptyOrZero(str))
+            if (IsNullOrEmptyOrZero(str))
                 return str;
 
             str = str.ToLower();
 
-           // return +
+            // return +
 
-          return  string.Concat(str.Substring(0, 1).ToUpper(), str.Substring(1));
+            return string.Concat(str.Substring(0, 1).ToUpper(), str.Substring(1));
 
         }
-    
-    
+
+
         /// <summary>
         /// 
         /// </summary>
@@ -57,9 +57,24 @@ namespace SadrTools.Utility
             // Salam_CHETORI ==> salamChetori
 
             //
-           string[] parts = str.Split('-','=',',');
+            string[] parts = str.Split('-', '=', ',');
 
-            throw new NotImplementedException();        
+            throw new NotImplementedException();
+        }
+
+        public static string MakeAbbreviation(string firstName, string lastName)
+        {
+            throw new NotImplementedException();
+
+        }
+
+        public static string SayWelcome(string AFirstName, string ALastName)
+        {
+            int[] numbers = new int[1];
+
+            object[] hamechi = new object[1];
+
+            throw new NotImplementedException();
         }
 
 
@@ -82,6 +97,16 @@ namespace SadrTools.Utility
         // percent
         // 
 
+
+        /// <summary>
+        /// حذف کاراکتر آخر
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
+        public static string RemoveLastCharacter(string str, int length = 1)
+        {
+            return str.Substring(0, str.Length - length);
+        }
 
     }
 

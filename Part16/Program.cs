@@ -22,6 +22,17 @@ namespace Part16
             Console.WriteLine(date4);
 
 
+            Console.Clear();
+
+            for (byte i = 0; i < 40; i++) 
+            {
+                Console.Write($"{i}! = {NumericHelper.CalculateFactorial(i)}\t\t");
+                Console.WriteLine($"{i}!!! = {NumericHelper.CalculateFactorial_Recursive(i)}");
+
+            }
+
+
+
             Console.ReadKey();
 
         }
