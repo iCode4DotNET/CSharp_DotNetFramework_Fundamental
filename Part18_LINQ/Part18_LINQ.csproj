@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8B01CD32-7E0C-4595-8CB1-744D4FAC9E9F}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SadrTools</RootNamespace>
-    <AssemblyName>SadrTools</AssemblyName>
+    <ProjectGuid>{441FDA75-01E7-47DB-9897-DCB67D4D2722}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Part18_LINQ</RootNamespace>
+    <AssemblyName>Part18_LINQ</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,15 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Extension\DateTimeExt.cs" />
-    <Compile Include="Extension\FileExt.cs" />
-    <Compile Include="Extension\IEnumExt.cs" />
-    <Compile Include="Extension\NumericExt.cs" />
-    <Compile Include="Extension\StringExt.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utility\DateHelper.cs" />
-    <Compile Include="Utility\NumericHelper.cs" />
-    <Compile Include="Utility\StringHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\SadrTools\SadrTools.csproj">
+      <Project>{8b01cd32-7e0c-4595-8cb1-744d4fac9e9f}</Project>
+      <Name>SadrTools</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
