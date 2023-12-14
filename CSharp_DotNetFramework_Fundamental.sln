@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part17_LINQ", "Part17_LINQ\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part18_LINQ", "Part18_LINQ\Part18_LINQ.csproj", "{441FDA75-01E7-47DB-9897-DCB67D4D2722}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part19_Compare_Collections", "Part19_Compare_Collections\Part19_Compare_Collections.csproj", "{544509F9-9266-4969-A927-084ED0C68C7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -125,6 +127,10 @@ Global
 		{441FDA75-01E7-47DB-9897-DCB67D4D2722}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{441FDA75-01E7-47DB-9897-DCB67D4D2722}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{441FDA75-01E7-47DB-9897-DCB67D4D2722}.Release|Any CPU.Build.0 = Release|Any CPU
+		{544509F9-9266-4969-A927-084ED0C68C7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{544509F9-9266-4969-A927-084ED0C68C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{544509F9-9266-4969-A927-084ED0C68C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{544509F9-9266-4969-A927-084ED0C68C7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

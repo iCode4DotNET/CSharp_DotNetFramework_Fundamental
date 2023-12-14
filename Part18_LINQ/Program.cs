@@ -149,7 +149,7 @@ namespace Part18_LINQ
             Console.WriteLine("-------------------------");
 
             var linq23 = from n in linq22
-                         orderby n.Remainder 
+                         orderby n.Remainder
                          select n;
 
 
@@ -167,6 +167,8 @@ namespace Part18_LINQ
 
             }
 
+            Console.Clear();
+
             //task 1
             //  ali, reza, Amir , Anahita , Ramin , ......
             // تعداد اعضای هر گروه هم نمایش داده شود
@@ -175,6 +177,72 @@ namespace Part18_LINQ
             // task 2
             // نمایش اعداد / اسامی تکراری در یک مجموعه
             // با استفاده از گروپ بای
+
+
+
+            var names = new List<string>
+            {
+                "zahra" , "amir","Ali","reza","Ramin","Arezoo","xaniar","kamran","ziba", "reza" , "ali" , "Xaniar"
+            };
+
+            // array zero based index ( a:0 m:1 i:2 r:3 )
+
+            var linq24 = from n in names
+                         group n by n.Substring(0, 1).ToUpper() into grp
+                         select new
+                         {
+                             FirstLetter = grp.Key,
+                             NamesInGroup = grp,
+                             CountMembers = grp.Count()
+                         };
+
+
+           //Array.Sort(myArray);
+
+            linq24 = linq24.OrderBy(x => x.FirstLetter);
+
+            foreach (var item in linq24)
+            {
+                Console.WriteLine($"The First Letter : {item.FirstLetter} Has {item.CountMembers} Members !!");
+
+                var str = "";
+                foreach (var name in item.NamesInGroup)
+                {
+                    str += name + ",";
+                }
+
+                Console.WriteLine(str.RemoveLastCharacter());
+
+            }
+
+            Console.Clear();
+
+            var linq25 = from n in names
+                         group n by n.ToLower() into grp
+                         select new
+                         {
+                             Name = grp.Key,
+                             NamesInGroup = grp,
+                             CountMembers = grp.Count()
+                         };
+
+            var linq26 = linq25.Where(x => x.CountMembers > 1);
+
+
+            foreach (var item in linq26)
+            {
+                Console.WriteLine($"The Name : {item.Name} Has Occuured {item.CountMembers} times !!");
+
+                var str = "";
+                foreach (var name in item.NamesInGroup)
+                {
+                    str += name + ",";
+                }
+
+                Console.WriteLine(str.RemoveLastCharacter());
+            }
+
+            //SadrTools.Utility.DateHelper.Equals
 
         }
     }
