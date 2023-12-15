@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EventFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventFrm.Designer.cs">
+      <DependentUpon>EventFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CalculateFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     <Compile Include="TaskFrm.Designer.cs">
       <DependentUpon>TaskFrm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="EventFrm.resx">
+      <DependentUpon>EventFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CalculateFrm.resx">
       <DependentUpon>CalculateFrm.cs</DependentUpon>
     </EmbeddedResource>
